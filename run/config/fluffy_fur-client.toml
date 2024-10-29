@@ -1,0 +1,32 @@
+
+#Graphics
+[graphics]
+	#Intensity of screenshake.
+	#Range: 0.0 ~ 10.0
+	screenshakeIntensity = 1.0
+
+	#Particles
+	[graphics.particles]
+		#Enable dropping items particles.
+		itemParticle = true
+		#Enable items particles in GUI.
+		itemGuiParticle = true
+		#Enable blood particles in case of damage.
+		bloodParticle = true
+
+#Menu
+[menu]
+	#Enable custom panorama button.
+	panorama = "minecraft:vanilla"
+	#Enable custom panorama button.
+	panoramaButton = true
+	#Custom panorama button row.
+	#Range: 0 ~ 4
+	panoramaButtonRow = 3
+	#Custom panorama button X offset with row.
+	panoramaButtonRowXOffset = 4
+	#Custom panorama button X offset.
+	panoramaButtonXOffset = 0
+	#Custom panorama button Y offset.
+	panoramaButtonYOffset = 0
+
