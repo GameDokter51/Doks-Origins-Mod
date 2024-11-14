@@ -1,0 +1,117 @@
+{
+    "name": "Soulstraight Dash",
+    "description": "Dash forwards at (slower than) the speed of light to obliterate anything in your way.",
+    "type": "origins:multiple",
+    "sound": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "shatteredsoul:boons/dash_move"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "shatteredsoul:boons/dash_move",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "shatteredsoul:banes/soulcharge",
+                    "comparison": ">=",
+                    "compare_to": 2
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.bat.takeoff",
+                    "volume": 0.9,
+                    "pitch": 0.5
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:glow",
+                    "count": 20,
+                    "speed": 1,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.4,
+                        "z": 0
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:luck",
+                        "duration": 15,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "shatteredsoul:banes/soulcharge",
+                    "change": -2,
+                    "operation": "add"
+                }
+            ]
+        }
+    },
+    "move": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "shatteredsoul:banes/soulcharge",
+                    "comparison": ">=",
+                    "compare_to": 2
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 1.3,
+                    "space": "local_horizontal_normalized",
+                    "client": false,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.25,
+                    "space": "velocity",
+                    "client": false,
+                    "server": true
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "shatteredsoul:boons/dash_move",
+                "comparison": "!=",
+                "compare_to": 0
+            }
+        }
+    }
+}

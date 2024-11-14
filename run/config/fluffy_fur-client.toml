@@ -12,7 +12,7 @@
 		#Enable items particles in GUI.
 		itemGuiParticle = true
 		#Enable blood particles in case of damage.
-		bloodParticle = true
+		bloodParticle = false
 
 #Menu
 [menu]

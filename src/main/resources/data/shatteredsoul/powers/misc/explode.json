@@ -1,0 +1,53 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": false,
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.firework_rocket.launch",
+                "volume": 1,
+                "pitch": 1.2
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle": "shatteredsoul:impact",
+                            "count": 1,
+                            "speed": 3,
+                            "spread": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "offset_y": 0
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.generic.explode",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        {
+                            "type": "origins:explode",
+                            "power": 3,
+                            "destruction_type": "none",
+                            "damage_self": true
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[type=minecraft:armor_stand,tag=shatteredsoul.crystal]"
+                        }
+                    ]
+                },
+                "ticks": 10
+            }
+        ]
+    }
+}

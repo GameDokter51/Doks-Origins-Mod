@@ -1,0 +1,11 @@
+{
+    "name": "WEAK",
+    "description": "Your body is still incomplete. You have less health than other people.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.max_health",
+        "operation": "addition",
+        "value": -2
+    },
+    "update_health": true
+}

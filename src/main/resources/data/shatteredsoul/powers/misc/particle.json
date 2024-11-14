@@ -1,0 +1,32 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": false,
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "execute as @e[type=minecraft:armor_stand,tag=shatteredsoul.particle,limit=1] at @s run tp @s ~ ~ ~ facing entity GameDokter51"
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 15,
+                "block": true,
+                "entity": true,
+                "shape_type": "collider",
+                "fluid_handling": "any",
+                "command_along_ray": "function shatteredsoul:particle",
+                "command_step": 1
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "kill @s"
+                },
+                "ticks": 5
+            }
+        ]
+    }
+}

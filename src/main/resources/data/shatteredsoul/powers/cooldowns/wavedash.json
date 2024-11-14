@@ -1,0 +1,51 @@
+{
+    "name": "wavedash",
+    "description": "boing more when hitting ground after dash",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:luck"
+            },
+            {
+                "type": "origins:on_block"
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:soul_fire_flame ~ ~1 ~ 0.25 0.4 0.25 0.025 20"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:particle.soul_escape",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 0.3,
+                "z": 0.6,
+                "space": "local",
+                "client": false,
+                "server": true
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "shatteredsoul:boons/dash_move",
+                "change": 0,
+                "operation": "set"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.jump",
+        "continuous": true
+    }
+}

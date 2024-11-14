@@ -1,0 +1,68 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:self_action_on_kill",
+        "target_condition": {
+            "type": "origins:on_block"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "shatteredsoul:banes/soulcharge",
+            "change": 1,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "airkill": {
+        "type": "origins:self_action_on_kill",
+        "target_condition": {
+            "inverted": true,
+            "type": "origins:on_block"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "shatteredsoul:banes/soulcharge",
+                    "change": 7,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at GameDokter51 run playsound minecraft:entity.ender_dragon.hurt player @a ~ ~1 ~ 10 1.6"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 1
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "y": 1,
+                    "space": "world",
+                    "client": false,
+                    "server": true,
+                    "set": true
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "combo": {
+        "type": "origins:target_action_on_hit",
+        "target_condition": {
+            "inverted": true,
+            "type": "origins:on_block"
+        },
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "y": 0.35,
+            "space": "world",
+            "client": false,
+            "server": true,
+            "set": true
+        },
+        "cooldown": 1
+    }
+}

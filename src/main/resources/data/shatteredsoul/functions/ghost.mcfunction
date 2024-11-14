@@ -1,0 +1,3 @@
+tag @a[tag=shatteredsoul.ghost] remove shatteredsoul.invisible
+
+execute if entity @a[tag=shatteredsoul.ghost,distance=..60] unless entity @s[gamemode=spectator] anchored eyes facing entity @a[tag=shatteredsoul.ghost,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.85] anchored eyes facing entity @a[tag=shatteredsoul.ghost,sort=nearest,limit=1] eyes positioned ^ ^ ^ run tag @a[tag=shatteredsoul.ghost,sort=nearest,limit=1] add shatteredsoul.invisible

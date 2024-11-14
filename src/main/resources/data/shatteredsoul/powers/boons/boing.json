@@ -1,0 +1,17 @@
+{
+    "name": "Bouncy",
+    "description": "boing",
+    "hidden": true,
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "addition",
+        "value": 0.45
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:end_rod ~ ~0.25 ~ 0.5 1 0.5 0 10 normal @a"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "shatteredsoul:banes/soulcharge",
+        "comparison": "<",
+        "compare_to": 100
+    },
+    "type": "origins:disable_regen"
+}

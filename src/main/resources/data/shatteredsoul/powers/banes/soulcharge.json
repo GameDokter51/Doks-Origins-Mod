@@ -1,0 +1,19 @@
+{
+    "name": "Soul Charge",
+    "description": "You must consume other's souls to keep yourself together. Without it, you cannot use your abilities.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+    "start_value": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 16
+    },
+    "max_action": {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:soul",
+        "count": 30,
+        "speed": 0.25
+    }
+}

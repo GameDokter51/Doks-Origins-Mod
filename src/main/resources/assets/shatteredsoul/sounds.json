@@ -1,0 +1,38 @@
+{
+    "heartbeat": {
+        "sounds": [
+            {
+                "name": "shatteredsoul:heartbeat",
+                "stream": true,
+                "volume": 1
+            }
+        ]
+    },
+    "suspense_strike": {
+      "subtitle": "subtitles.suspense_strike",
+      "sounds": [
+        {
+          "name": "shatteredsoul:suspense_strike",
+          "stream": false
+        }
+      ]
+    },
+    "bell_toll": {
+      "subtitle": "subtitles.bell_toll",
+      "sounds": [
+        {
+          "name": "shatteredsoul:bell_toll",
+          "stream": false
+        }
+      ]
+    },
+    "ricochet": {
+      "subtitle": "subtitles.ricochet",
+      "sounds": [
+        {
+          "name": "shatteredsoul:ricochet",
+          "stream": false
+        }
+      ]
+    }
+}

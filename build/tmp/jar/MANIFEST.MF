@@ -1,2 +1,9 @@
 Manifest-Version: 1.0
+Specification-Title: lycanthrope
+Specification-Vendor: NoxAeterna, GameDokter51
+Specification-Version: 1
+Implementation-Title: LycanthropeOriginForge
+Implementation-Version: 1.0.4
+Implementation-Vendor: NoxAeterna, GameDokter51
+Implementation-Timestamp: 2024-10-17T20:09:49-0500
 

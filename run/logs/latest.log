@@ -1,110 +1,373 @@
-[29Oct2024 15:00:47.525] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\GHDok\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[29Oct2024 15:00:47.542] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
-[29Oct2024 15:00:47.641] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[29Oct2024 15:00:47.744] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[29Oct2024 15:00:47.925] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[29Oct2024 15:00:48.047] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/GHDok/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[29Oct2024 15:00:48.116] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4070/PCIe/SSE2 GL version 4.6.0 NVIDIA 537.13, NVIDIA Corporation
-[29Oct2024 15:00:48.371] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\GHDok\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.0\d7ebc62120f202109e300e084ca1a31a7b946a62\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[29Oct2024 15:00:48.374] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\GHDok\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.0\1bf3e845ea0ce750096da8c71c8364b188ab74d4\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[29Oct2024 15:00:48.376] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\GHDok\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.0\6093682e943ddccbabf70539319d7f2fe64db2e7\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[29Oct2024 15:00:48.380] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\GHDok\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.0\3b6be96aba3e323f3c918e8ef6a96312d82d76ad\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
-[29Oct2024 15:00:48.542] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
-[29Oct2024 15:00:49.745] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[29Oct2024 15:00:49.751] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\GHDok\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[29Oct2024 15:00:50.066] [main/INFO] [mixin/]: Remapping refMap fluffy_fur.refmap.json using D:\MC\Modmaking\DoksOriginsAddon\doks_origins\build\createSrgToMcp\output.srg
-[29Oct2024 15:00:50.068] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\MC\Modmaking\DoksOriginsAddon\doks_origins\build\createSrgToMcp\output.srg
-[29Oct2024 15:00:50.178] [main/WARN] [mixin/]: Error loading class: top/theillusivec4/curios/client/ClientEventHandler (java.lang.ClassNotFoundException: top.theillusivec4.curios.client.ClientEventHandler)
-[29Oct2024 15:00:50.178] [main/WARN] [mixin/]: @Mixin target top.theillusivec4.curios.client.ClientEventHandler was not found fluffy_fur.mixins.json:client.CurioTooltipMixin
-[29Oct2024 15:00:54.275] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 113 milliseconds
-[29Oct2024 15:00:55.908] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/GHDok/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[29Oct2024 15:00:55.908] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/GHDok/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[29Oct2024 15:00:55.923] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[29Oct2024 15:00:55.926] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[29Oct2024 15:00:56.007] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[29Oct2024 15:00:56.223] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
-[29Oct2024 15:00:56.225] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
-[29Oct2024 15:00:57.167] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
-[29Oct2024 15:00:57.453] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[29Oct2024 15:00:57.520] [Worker-Main-11/INFO] [net.mcreator.doksorigins.DoksOriginsMod/]: If you're seeing this, it ACTUALLY WORKS. Or should be anyways.
-[29Oct2024 15:00:57.526] [Worker-Main-11/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]: I wanna cuddle
-[29Oct2024 15:00:57.527] [Worker-Main-11/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]:  /\_/\
-[29Oct2024 15:00:57.527] [Worker-Main-11/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]: ( o.o )
-[29Oct2024 15:00:57.527] [Worker-Main-11/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]:  > ^ <
-[29Oct2024 15:00:57.559] [Worker-Main-10/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[29Oct2024 15:00:57.603] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[29Oct2024 15:00:57.968] [Worker-Main-1/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture minecraft:particle/goldheart_0 with size 8x7 limits mip level from 2 to 0
-[29Oct2024 15:00:58.221] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
-[29Oct2024 15:00:59.921] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[29Oct2024 15:00:59.921] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[29Oct2024 15:00:59.970] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (Soundcore Life Q30_BLE Stereo)
-[29Oct2024 15:00:59.971] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[29Oct2024 15:01:00.109] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[29Oct2024 15:01:00.117] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[29Oct2024 15:01:00.118] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[29Oct2024 15:01:00.119] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[29Oct2024 15:01:00.120] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[29Oct2024 15:01:00.122] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[29Oct2024 15:01:00.123] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[29Oct2024 15:01:00.123] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[29Oct2024 15:01:00.123] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[29Oct2024 15:01:00.226] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[29Oct2024 15:01:00.274] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[29Oct2024 15:01:00.275] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[29Oct2024 15:01:00.275] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[29Oct2024 15:01:00.480] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[29Oct2024 15:01:59.193] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[29Oct2024 15:02:00.728] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[29Oct2024 15:02:00.824] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[29Oct2024 15:02:01.189] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[29Oct2024 15:02:01.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[29Oct2024 15:02:02.455] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[29Oct2024 15:02:04.010] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:04.046] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:04.046] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:04.046] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:04.479] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:04.976] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Oct2024 15:02:05.452] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[29Oct2024 15:02:05.458] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2997 ms
-[29Oct2024 15:02:05.572] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 17, from 10
-[29Oct2024 15:02:05.574] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[29Oct2024 15:02:05.668] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[29Oct2024 15:02:06.066] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[29Oct2024 15:02:06.124] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e0485061] logged in with entity id 21 at (181.8496571332445, 68.0, -57.9981429190272)
-[29Oct2024 15:02:06.169] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[29Oct2024 15:02:06.875] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 138 advancements
-[29Oct2024 15:02:07.403] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[29Oct2024 15:02:07.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:overworld
-[29Oct2024 15:02:08.142] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_nether
-[29Oct2024 15:02:08.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_end
-[29Oct2024 15:02:40.600] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 105.01802130045795, 99.21593415737152, -21.666852018319958.
-[29Oct2024 15:02:43.773] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> 1
-[29Oct2024 15:02:43.784] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] <Dev> 1
-[29Oct2024 15:02:45.148] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 104.66190313706494, 105.62258094549179, -59.40890915113285.
-[29Oct2024 15:02:45.547] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 104.66190313706494, 105.62258094549179, -59.393893151550856.
-[29Oct2024 15:02:46.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> 2
-[29Oct2024 15:02:46.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] <Dev> 2
-[29Oct2024 15:02:47.748] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 104.66190313706494, 105.62258094549179, -59.393893151550856.
-[29Oct2024 15:02:47.997] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 104.66190313706494, 105.62258094549179, -59.393893151550856.
-[29Oct2024 15:02:48.298] [Server thread/INFO] [com.mojang.text2speech.Narrator/]: Coords are 104.66190313706494, 105.62258094549179, -59.393893151550856.
-[29Oct2024 15:02:49.397] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> 3
-[29Oct2024 15:02:49.397] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] <Dev> 3
-[29Oct2024 15:02:50.003] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[29Oct2024 15:02:50.028] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:overworld
-[29Oct2024 15:02:50.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_nether
-[29Oct2024 15:02:50.041] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_end
-[29Oct2024 15:02:50.709] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[29Oct2024 15:02:50.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[29Oct2024 15:02:50.735] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[29Oct2024 15:02:50.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[29Oct2024 15:02:50.764] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[29Oct2024 15:02:50.764] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[29Oct2024 15:02:50.901] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:overworld
-[29Oct2024 15:02:50.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_nether
-[29Oct2024 15:02:50.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing please work]'/minecraft:the_end
-[29Oct2024 15:02:51.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Testing please work): All chunks are saved
-[29Oct2024 15:02:51.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[29Oct2024 15:02:51.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[29Oct2024 15:02:51.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[29Oct2024 15:02:52.424] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[14Nov2024 02:07:12.945] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\quant\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[14Nov2024 02:07:12.950] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[14Nov2024 02:07:13.081] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[14Nov2024 02:07:13.142] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[14Nov2024 02:07:13.282] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[14Nov2024 02:07:13.360] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/quant/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[14Nov2024 02:07:13.404] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 561.09, NVIDIA Corporation
+[14Nov2024 02:07:13.647] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\quant\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.0\d7ebc62120f202109e300e084ca1a31a7b946a62\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[14Nov2024 02:07:13.650] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\quant\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.0\1bf3e845ea0ce750096da8c71c8364b188ab74d4\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[14Nov2024 02:07:13.654] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\quant\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.0\6093682e943ddccbabf70539319d7f2fe64db2e7\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[14Nov2024 02:07:13.657] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\quant\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.0\3b6be96aba3e323f3c918e8ef6a96312d82d76ad\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[14Nov2024 02:07:14.026] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[14Nov2024 02:07:14.028] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
+[14Nov2024 02:07:15.773] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[14Nov2024 02:07:16.007] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\quant\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[14Nov2024 02:07:16.449] [main/INFO] [mixin/]: Remapping refMap moonlight-common-refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.453] [main/INFO] [mixin/]: Remapping refMap moonlight-forge-refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.457] [main/INFO] [mixin/]: Remapping refMap fluffy_fur.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.461] [main/INFO] [mixin/]: Remapping refMap additionalentityattributes.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.466] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.476] [main/INFO] [mixin/]: Remapping refMap Pehkui-refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.480] [main/INFO] [mixin/]: Remapping refMap calio.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.484] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.490] [main/INFO] [mixin/]: Remapping refMap apoli.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.494] [main/INFO] [mixin/]: Remapping refMap dummmmmmy-common-refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.512] [main/INFO] [mixin/]: Remapping refMap origins.refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:16.525] [main/INFO] [Embeddium/]: Loaded configuration file for Embeddium: 61 options available, 0 override(s) found
+[14Nov2024 02:07:16.528] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Searching for graphics cards...
+[14Nov2024 02:07:16.819] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=NVIDIA, name=NVIDIA GeForce RTX 4060 Laptop GPU, version=DriverVersion=32.0.15.6109]
+[14Nov2024 02:07:16.820] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=INTEL, name=Intel(R) UHD Graphics, version=DriverVersion=31.0.101.4502]
+[14Nov2024 02:07:16.829] [main/WARN] [Embeddium-Workarounds/]: Embeddium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
+[14Nov2024 02:07:16.830] [main/WARN] [Embeddium-Workarounds/]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[14Nov2024 02:07:16.839] [main/INFO] [mixin/]: Remapping refMap embeddium-refmap.json using C:\Users\quant\Documents\Minecraft Mods\ShatteredSoulOriginForge/build/createSrgToMcp/output.srg
+[14Nov2024 02:07:17.413] [main/WARN] [mixin/]: Error loading class: top/theillusivec4/curios/client/ClientEventHandler (java.lang.ClassNotFoundException: top.theillusivec4.curios.client.ClientEventHandler)
+[14Nov2024 02:07:17.414] [main/WARN] [mixin/]: @Mixin target top.theillusivec4.curios.client.ClientEventHandler was not found fluffy_fur.mixins.json:client.CurioTooltipMixin
+[14Nov2024 02:07:18.125] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.6).
+[14Nov2024 02:07:23.361] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 124 milliseconds
+[14Nov2024 02:07:25.067] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/quant/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[14Nov2024 02:07:25.068] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/quant/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[14Nov2024 02:07:25.083] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14Nov2024 02:07:25.086] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[14Nov2024 02:07:25.167] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[14Nov2024 02:07:25.214] [Render thread/WARN] [Embeddium-NvidiaWorkarounds/]: Applying workaround: Prevent the NVIDIA OpenGL driver from using broken optimizations (NVIDIA_THREADED_OPTIMIZATIONS)
+[14Nov2024 02:07:25.231] [Render thread/INFO] [Embeddium-PostlaunchChecks/]: OpenGL Vendor: NVIDIA Corporation
+[14Nov2024 02:07:25.231] [Render thread/INFO] [Embeddium-PostlaunchChecks/]: OpenGL Renderer: NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2
+[14Nov2024 02:07:25.231] [Render thread/INFO] [Embeddium-PostlaunchChecks/]: OpenGL Version: 4.6.0 NVIDIA 561.09
+[14Nov2024 02:07:25.232] [Render thread/WARN] [Embeddium-PostlaunchChecks/]: Enabling secondary workaround for NVIDIA threaded optimizations
+[14Nov2024 02:07:25.476] [modloading-worker-0/INFO] [io.github.apace100.origins.Origins/]: Origins 1.20.1-1.10.0.9 is initializing. Have fun!
+[14Nov2024 02:07:25.489] [modloading-worker-0/INFO] [Calio/]: Calio 1.20.1-1.11.0.5 initializing...
+[14Nov2024 02:07:25.524] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
+[14Nov2024 02:07:25.525] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
+[14Nov2024 02:07:26.317] [modloading-worker-0/INFO] [io.github.apace100.apoli.Apoli/]: Apoli 1.20.1-2.9.0.8 has initialized. Ready to power up your game!
+[14Nov2024 02:07:26.458] [Render thread/INFO] [Moonlight/]: Initialized block sets in 13ms
+[14Nov2024 02:07:26.970] [Render thread/INFO] [Calio/]: CDRM Initialized with 16 registries
+[14Nov2024 02:07:27.629] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [shatteredsoul]
+[14Nov2024 02:07:27.916] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, Moonlight Mods Dynamic Assets
+[14Nov2024 02:07:27.927] [Render thread/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack Moonlight Mods Dynamic Assets (moonlight) in: 1 ms (debug resource dump on)
+[14Nov2024 02:07:28.000] [Worker-Main-3/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]: prrrr
+[14Nov2024 02:07:28.001] [Worker-Main-3/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]:  /\_/\
+[14Nov2024 02:07:28.001] [Worker-Main-3/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]: ( o.o )
+[14Nov2024 02:07:28.001] [Worker-Main-3/INFO] [mod.maxbogomol.fluffy_fur.FluffyFur/]:  > ^ <
+[14Nov2024 02:07:28.167] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Moonlight/multi-loader/forge/update.json
+[14Nov2024 02:07:28.211] [Worker-Main-15/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[14Nov2024 02:07:28.675] [Render thread/INFO] [Moonlight/]: Initialized color sets in 13ms
+[14Nov2024 02:07:28.834] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: BETA Current: 1.20-2.13.0 Target: null
+[14Nov2024 02:07:28.835] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[14Nov2024 02:07:29.035] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
+[14Nov2024 02:07:29.260] [Worker-Main-14/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture minecraft:particle/nautilus with size 8x8 limits mip level from 4 to 3
+[14Nov2024 02:07:29.261] [Worker-Main-14/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture minecraft:particle/goldheart_0 with size 8x7 limits mip level from 3 to 0
+[14Nov2024 02:07:30.631] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[14Nov2024 02:07:30.631] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14Nov2024 02:07:31.330] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[14Nov2024 02:07:31.331] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[14Nov2024 02:07:31.410] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[14Nov2024 02:07:31.438] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.438] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[14Nov2024 02:07:31.438] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.439] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14Nov2024 02:07:31.439] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.439] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14Nov2024 02:07:31.440] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.440] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[14Nov2024 02:07:31.443] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.443] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[14Nov2024 02:07:31.444] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.444] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[14Nov2024 02:07:31.444] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.444] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14Nov2024 02:07:31.445] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.445] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[14Nov2024 02:07:31.445] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.560] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[14Nov2024 02:07:31.582] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find sampler named Sampler2 in the specified shader program.
+[14Nov2024 02:07:31.582] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find uniform named IViewRotMat in the specified shader program.
+[14Nov2024 02:07:31.582] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find uniform named FogStart in the specified shader program.
+[14Nov2024 02:07:31.582] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find uniform named FogEnd in the specified shader program.
+[14Nov2024 02:07:31.583] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find uniform named FogColor in the specified shader program.
+[14Nov2024 02:07:31.598] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/particles.png-atlas
+[14Nov2024 02:07:31.599] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.599] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14Nov2024 02:07:31.600] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.600] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14Nov2024 02:07:31.600] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.607] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 moonlight:textures/atlas/map_markers.png-atlas
+[14Nov2024 02:07:31.607] [Render thread/INFO] [Moonlight/]: Cleared non-static resources for pack moonlight:mods_dynamic_assets in: 0 ms
+[14Nov2024 02:07:31.759] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[14Nov2024 02:07:35.509] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[14Nov2024 02:07:37.114] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[14Nov2024 02:07:37.159] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1274 advancements
+[14Nov2024 02:07:37.197] [Render thread/WARN] [io.github.apace100.apoli.Apoli/]: Power "shatteredsoul:banes/ptsd" will only be partially loaded: Failed to read fields: Unknown registry key: apugli:structure, At ResourceLocation: JsonObject; Unknown registry key: apugli:structure, At ResourceLocation: JsonObject
+[14Nov2024 02:07:37.210] [Render thread/ERROR] [io.github.apace100.apoli.Apoli/]: Error loading power "shatteredsoul:banes/soulsearingtrigger": At ParticleOptions: Identifier "endermanoverhaul:soul_fire" was not registered in registry "minecraft:particle_type"., At ResourceLocation: JsonObject
+[14Nov2024 02:07:37.210] [Render thread/ERROR] [io.github.apace100.apoli.Apoli/]: Loading for all instances of power shatteredsoul:banes/soulsearingtrigger failed.
+[14Nov2024 02:07:37.213] [Render thread/WARN] [io.github.apace100.apoli.Apoli/]: Power "shatteredsoul:boons/grapple" will only be partially loaded: At SoundEvent: Identifier "parcool:action.slide" was not registered in registry "minecraft:sound_event"., At ResourceLocation: JsonObject, At ResourceLocation: JsonObject
+[14Nov2024 02:07:37.260] [Render thread/ERROR] [io.github.apace100.apoli.Apoli/]: Error loading power "shatteredsoul:boons/silent": Unknown registry key: apugli:custom_footstep
+[14Nov2024 02:07:37.260] [Render thread/ERROR] [io.github.apace100.apoli.Apoli/]: Loading for all instances of power shatteredsoul:boons/silent failed.
+[14Nov2024 02:07:37.270] [Render thread/ERROR] [io.github.apace100.origins.Origins/]: Removed 2 missing powers from shatteredsoul:shatteredsoul
+[14Nov2024 02:07:37.573] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[14Nov2024 02:07:37.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[14Nov2024 02:07:37.642] [Server thread/INFO] [spark/]: Starting background profiler...
+[14Nov2024 02:07:37.656] [Server thread/INFO] [spark/]: The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[14Nov2024 02:07:38.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[14Nov2024 02:07:40.646] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Nov2024 02:07:40.646] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Nov2024 02:07:40.646] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Nov2024 02:07:40.647] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Nov2024 02:07:40.647] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Nov2024 02:07:41.125] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 57%
+[14Nov2024 02:07:41.285] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[14Nov2024 02:07:41.294] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2688 ms
+[14Nov2024 02:07:41.409] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[14Nov2024 02:07:41.410] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[14Nov2024 02:07:41.535] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[14Nov2024 02:07:42.184] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 0
+[14Nov2024 02:07:42.211] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 1
+[14Nov2024 02:07:42.264] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 2
+[14Nov2024 02:07:42.309] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 3
+[14Nov2024 02:07:42.362] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 4
+[14Nov2024 02:07:42.388] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 5
+[14Nov2024 02:07:42.422] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 6
+[14Nov2024 02:07:42.450] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 7
+[14Nov2024 02:07:42.479] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 8
+[14Nov2024 02:07:42.519] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 9
+[14Nov2024 02:07:42.551] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 10
+[14Nov2024 02:07:42.583] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 11
+[14Nov2024 02:07:42.664] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 12
+[14Nov2024 02:07:42.665] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 13
+[14Nov2024 02:07:42.673] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 14
+[14Nov2024 02:07:42.699] [Netty Server IO #1/INFO] [Calio/]: Received acknowledgment for login packet with id 15
+[14Nov2024 02:07:42.868] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[14Nov2024 02:07:43.020] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:729d72e2] logged in with entity id 259 at (53.68772382241308, 64.0, -13.984748551522669)
+[14Nov2024 02:07:43.163] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[14Nov2024 02:07:43.244] [Render thread/WARN] [mixin/]: Error loading class: net/fabricmc/fabric/api/blockview/v2/FabricBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.blockview.v2.FabricBlockView)
+[14Nov2024 02:07:43.268] [Render thread/WARN] [mixin/]: Error loading class: net/fabricmc/fabric/api/rendering/data/v1/RenderAttachedBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.rendering.data.v1.RenderAttachedBlockView)
+[14Nov2024 02:07:43.334] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[14Nov2024 02:07:43.805] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 10 advancements
+[14Nov2024 02:08:00.774] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:08.911] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:09.458] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:09.809] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:10.109] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:10.297] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:10.512] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:10.758] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:10.959] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:11.156] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:11.357] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:12.847] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.159] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.304] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.459] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.610] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.744] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:14.880] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.021] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.162] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.304] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.360] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.490] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.536] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:15.677] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:19.404] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:19.600] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:19.808] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:20.001] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:20.195] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:20.411] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:20.613] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:20.814] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:22.600] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:22.801] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:22.952] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:23.111] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:23.301] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:23.905] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:24.049] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:24.284] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:24.482] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:24.676] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:25.288] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:25.500] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:25.636] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:26.648] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:26.849] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:29.004] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:29.203] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:29.406] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:29.607] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:29.804] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:30.000] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:30.205] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:30.412] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:30.604] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:30.809] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:31.012] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:31.219] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:31.509] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:31.646] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:31.802] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:32.037] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:32.205] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:32.404] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:32.618] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:32.830] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:33.016] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:33.220] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:33.407] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:33.605] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:33.806] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:34.007] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:34.208] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:34.419] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:34.616] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:34.811] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:35.014] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:35.236] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:35.469] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:35.614] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:35.810] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:36.013] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:36.243] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:36.403] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:36.606] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:36.807] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:37.012] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:37.209] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:37.468] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:37.603] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:37.801] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:38.018] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:38.216] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:38.424] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:38.646] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:38.868] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:39.021] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:39.204] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:39.419] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:39.607] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:39.833] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:40.085] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:40.266] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:40.414] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:40.605] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:40.804] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:41.008] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:41.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:41.415] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:41.619] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:41.812] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:42.006] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:42.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:42.409] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:42.623] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:42.814] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:43.015] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:43.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:43.410] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:43.616] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:43.810] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:44.008] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:44.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:44.507] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:44.646] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:44.803] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:45.014] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:45.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:45.432] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:45.609] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:45.808] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:46.012] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:46.217] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:46.417] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:46.615] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:46.811] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:47.041] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:47.255] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:47.411] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:47.616] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:47.813] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:48.008] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:48.217] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:48.443] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:48.611] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:48.815] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:49.013] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:49.207] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:49.413] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:49.628] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:49.836] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:50.022] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:50.210] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:50.408] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:50.607] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:50.817] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:51.010] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:51.212] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:51.439] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:51.617] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:51.812] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:52.008] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:52.206] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:52.427] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:52.610] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:52.807] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:53.011] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:53.206] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:53.418] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:53.607] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:53.818] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:54.007] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:54.217] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:54.420] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:54.608] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:54.805] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:55.010] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:55.206] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:55.433] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:55.648] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:56.265] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:57.110] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:57.756] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:58.509] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:08:59.854] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:00.705] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:01.036] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:34.153] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:42.770] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:46.847] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:53.704] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:54.279] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:54.766] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:55.215] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:55.624] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:09:55.999] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Could not spawn particle effect net.minecraft.core.particles.SimpleParticleType@320e179f
+[14Nov2024 02:10:00.138] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[14Nov2024 02:10:00.147] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Nov2024 02:10:00.162] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Nov2024 02:10:00.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Nov2024 02:10:00.752] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[14Nov2024 02:10:00.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[14Nov2024 02:10:00.767] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[14Nov2024 02:10:00.789] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[14Nov2024 02:10:00.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[14Nov2024 02:10:00.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[14Nov2024 02:10:01.446] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Nov2024 02:10:01.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Nov2024 02:10:01.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Nov2024 02:10:01.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[14Nov2024 02:10:01.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14Nov2024 02:10:01.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14Nov2024 02:10:01.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14Nov2024 02:10:02.051] [Server thread/INFO] [Calio/]: Removing Dynamic Registries for: net.minecraft.client.server.IntegratedServer@1ccb0482
+[14Nov2024 02:10:02.065] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[14Nov2024 02:10:02.628] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

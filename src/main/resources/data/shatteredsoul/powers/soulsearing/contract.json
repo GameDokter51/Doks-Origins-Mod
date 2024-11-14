@@ -1,0 +1,41 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "shatteredsoul:signed_contract"
+            }
+        }
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "power grant @a[tag=shatteredsoul.bound] shatteredsoul:banes/vision"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power grant @a[tag=shatteredsoul.bound] shatteredsoul:banes/vision_far"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power grant @a[tag=shatteredsoul.bound] shatteredsoul:soulsearing/immortal"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:ambient.underwater.loop.additions.ultra_rare",
+                "volume": 1000,
+                "pitch": 0.1
+            }
+        ]
+    },
+    "cooldown": 60,
+    "key": {
+        "key": "key.use"
+    }
+}

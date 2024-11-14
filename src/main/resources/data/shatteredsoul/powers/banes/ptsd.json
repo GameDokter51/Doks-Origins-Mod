@@ -1,0 +1,56 @@
+{
+    "name": "PTSD",
+    "description": "You can never forget what the illagers did to you, and even seeing them again terrifies you.",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @e[type=#minecraft:raiders,distance=..10]",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "apugli:structure",
+                    "structure": "minecraft:mansion"
+                },
+                {
+                    "type": "apugli:structure",
+                    "structure": "minecraft:pillager_outpost"
+                }
+            ]
+        },
+        "type": "origins:shaking"
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:command",
+            "command": "execute if entity @e[type=#minecraft:raiders,distance=..7]",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:slowness",
+                    "duration": 30,
+                    "amplifier": 0,
+                    "show_particles": false,
+                    "show_icon": true
+                },
+                {
+                    "effect": "minecraft:weakness",
+                    "duration": 30,
+                    "amplifier": 0,
+                    "show_particles": false,
+                    "show_icon": true
+                }
+            ]
+        }
+    }
+}
