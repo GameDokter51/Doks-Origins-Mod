@@ -6,7 +6,6 @@ import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
@@ -23,7 +22,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.noxaeterna.shatteredsoul.ShatteredSoul;
 import net.noxaeterna.shatteredsoul.init.Items;
 import net.noxaeterna.shatteredsoul.init.ParticleTypes;
 
@@ -43,6 +41,8 @@ public class Contract extends Item {
 	}
 
 	public static void signContract(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+		final Minecraft instance = Minecraft.getInstance();
+
 		if (entity == null)
 			return;
 		{
@@ -60,7 +60,7 @@ public class Contract extends Item {
 			}
 		}
 		if (world.isClientSide())
-			Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
+			instance.gameRenderer.displayItemActivation(itemstack);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("shatteredsoul:suspense_strike")), SoundSource.MASTER, 1, (float) 0.9);

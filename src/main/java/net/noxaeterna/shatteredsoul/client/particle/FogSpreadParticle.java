@@ -30,6 +30,46 @@ public class FogSpreadParticle extends TextureSheetParticle {
         this.setParticleSpeed(0D, 0D, 0D);
         this.lifetime = (int) 0;
         this.setSpriteFromAge(sprites);
+		
+		if (level.isClientSide()) {
+			for (int i = 0; i < 30; i++) {
+				double angle = Math.toRadians(i * (360.0 / 30));  // Convert degree to radians, dividing the circle into 20 segments
+				double distance = 0.3;  // Set a fixed distance from the center (radius of the circle)
+
+				double xOffset = Math.cos(angle) * distance;
+				double zOffset = Math.sin(angle) * distance;
+
+				ParticleBuilder.create(FluffyFurParticles.WISP)
+					.setRenderType(FluffyFurRenderTypes.TRANSLUCENT_PARTICLE)
+					.setBehavior(ParticleBehavior.create(90, 0, 0)
+							.setXSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
+							.setYSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
+							.setZSpinData(SpinParticleData.create().randomOffset().randomSpin(0.5f).build())
+							.build())
+					.setColorData(ColorParticleData.create(0.7f, 1f, 1f, 0f, 0.01f, 0.01f).build())
+					.setTransparencyData(GenericParticleData.create(0.05f, 0).setEasing(Easing.QUARTIC_OUT).build())
+					.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
+					.setLightData(LightParticleData.DEFAULT)
+					.setLifetime(70, 120)
+					.setVelocity(xOffset, 0, zOffset)
+					.repeat(level, x, y + 0.35, z, 1);
+
+				ParticleBuilder.create(FluffyFurParticles.WISP)
+					.setRenderType(FluffyFurRenderTypes.TRANSLUCENT_PARTICLE)
+					.setBehavior(ParticleBehavior.create(90, 0, 0)
+							.setXSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
+							.setYSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
+							.setZSpinData(SpinParticleData.create().randomOffset().randomSpin(0.5f).build())
+							.build())
+					.setColorData(ColorParticleData.create(0.15f, 0.3f, 0.3f, 0f, 0.01f, 0.01f).build())
+					.setTransparencyData(GenericParticleData.create(0.045f, 0).setEasing(Easing.QUARTIC_OUT).build())
+					.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
+					.setLightData(LightParticleData.DEFAULT)
+					.setLifetime(100, 100)
+					.setVelocity(xOffset, 0, zOffset)
+					.repeat(level, x, y + 0.1, z, 1);
+			}
+		}
     }
 
     @Override
@@ -59,45 +99,6 @@ public class FogSpreadParticle extends TextureSheetParticle {
                                        double x, double y, double z,
                                        double dx, double dy, double dz) {
                                         
-		    if (level.isClientSide()) {
-			    for (int i = 0; i < 120; i++) {
-				    double angle = Math.toRadians(i * (360.0 / 120));  // Convert degree to radians, dividing the circle into 20 segments
-				    double distance = 0.3;  // Set a fixed distance from the center (radius of the circle)
-
-				    double xOffset = Math.cos(angle) * distance;
-				    double zOffset = Math.sin(angle) * distance;
-
-				    ParticleBuilder.create(FluffyFurParticles.WISP)
-						.setRenderType(FluffyFurRenderTypes.TRANSLUCENT_PARTICLE)
-						.setBehavior(ParticleBehavior.create(90, 0, 0)
-								.setXSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
-								.setYSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
-								.setZSpinData(SpinParticleData.create().randomOffset().randomSpin(0.5f).build())
-								.build())
-						.setColorData(ColorParticleData.create(0.7f, 1f, 1f, 0f, 0.01f, 0.01f).build())
-						.setTransparencyData(GenericParticleData.create(0.05f, 0).setEasing(Easing.QUARTIC_OUT).build())
-						.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
-						.setLightData(LightParticleData.DEFAULT)
-						.setLifetime(70, 120)
-						.setVelocity(xOffset, 0, zOffset)
-						.repeat(level, x, y + 0.35, z, 1);
-
-				    ParticleBuilder.create(FluffyFurParticles.WISP)
-						.setRenderType(FluffyFurRenderTypes.TRANSLUCENT_PARTICLE)
-						.setBehavior(ParticleBehavior.create(90, 0, 0)
-								.setXSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
-								.setYSpinData(SpinParticleData.create().randomOffsetDegrees(-5, 5).build())
-								.setZSpinData(SpinParticleData.create().randomOffset().randomSpin(0.5f).build())
-								.build())
-						.setColorData(ColorParticleData.create(0.15f, 0.3f, 0.3f, 0f, 0.01f, 0.01f).build())
-						.setTransparencyData(GenericParticleData.create(0.045f, 0).setEasing(Easing.QUARTIC_OUT).build())
-						.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
-						.setLightData(LightParticleData.DEFAULT)
-						.setLifetime(100, 100)
-						.setVelocity(xOffset, 0, zOffset)
-						.repeat(level, x, y + 0.1, z, 1);
-			    }
-		    }
             return new FogSpreadParticle(level, x, y, z, this.sprites, dx, dy, dz);
         }
     }

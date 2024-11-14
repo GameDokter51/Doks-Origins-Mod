@@ -7,7 +7,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "execute as @e[type=minecraft:armor_stand,tag=shatteredsoul.particle,limit=1] at @s run tp @s ~ ~ ~ facing entity GameDokter51"
+                "command": "execute as @e[type=minecraft:armor_stand,tag=shatteredsoul.particle,limit=1] at @s run tp @s ~ ~ ~ facing entity @p[tag=shatteredsoul]"
             },
             {
                 "type": "origins:raycast",
