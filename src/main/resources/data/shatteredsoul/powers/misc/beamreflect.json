@@ -1,0 +1,72 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "entity_action_gained": {
+        "type": "origins:raycast",
+        "distance": 20,
+        "block": false,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "inverted": true,
+                "type": "origins:origin",
+                "origin": "shatteredsoul:shatteredsoul"
+            }
+        },
+        "bientity_action": {
+            "type": "origins:damage",
+            "amount": 15,
+            "damage_type": "magic"
+        },
+        "before_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound shatteredsoul:ricochet player @a ~ ~0.5 ~"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[tag=shatteredsoul.hitbox,distance=..1]"
+                }
+            ]
+        },
+        "hit_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:interaction ~ ~ ~ {width:1f,height:1f,Tags:[\"shatteredsoul.hitbox\"]}"
+        },
+        "miss_action": {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "stopsound @a player shatteredsoul:ricochet"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "summon minecraft:interaction ~ ~ ~ {width:1f,height:1f,Tags:[\"shatteredsoul.hitbox\"]}"
+                    }
+                ]
+            },
+            "ticks": 5
+        },
+        "command_at_hit": "particle minecraft:soul_fire_flame ~ ~ ~ 0 0 0 0.1 20",
+        "command_along_ray": "particle minecraft:end_rod",
+        "command_step": 1,
+        "command_along_ray_only_on_hit": true
+    },
+    "entity_action_added": {
+        "type": "origins:delay",
+        "action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @e[type=minecraft:armor_stand,tag=shatteredsoul.crystal] shatteredsoul:misc/beamreflect"
+        },
+        "ticks": 10
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Shattered Soul",
+    "description": "shiny",
+    "powers": [
+        "shatteredsoul:boons/dash",
+        "shatteredsoul:boons/lightweight",
+        "shatteredsoul:boons/boing",
+        "shatteredsoul:boons/crush",
+        "shatteredsoul:boons/judgement",
+        "shatteredsoul:cooldowns/grounded",
+        "shatteredsoul:cooldowns/wavedash",
+        "shatteredsoul:banes/soulcharge",
+        "shatteredsoul:banes/noheal",
+        "shatteredsoul:banes/ptsd",
+        "shatteredsoul:banes/smite",
+        "shatteredsoul:banes/weak",
+        "shatteredsoul:banes/soulsearingtrigger",
+        "shatteredsoul:boons/recharging",
+        "shatteredsoul:misc/rechargelapis",
+        "shatteredsoul:misc/rechargelantern",
+        "shatteredsoul:misc/rechargetorch",
+        "shatteredsoul:misc/peripheral",
+        "shatteredsoul:misc/tag",
+        "shatteredsoul:boons/rechargekill",
+        "shatteredsoul:boons/laser",
+        "shatteredsoul:boons/crystalspawn",
+        "shatteredsoul:boons/fireres",
+        "shatteredsoul:boons/nohunger",
+        "shatteredsoul:boons/rocketjump",
+        "shatteredsoul:boons/silent",
+        "shatteredsoul:boons/grapple",
+        "shatteredsoul:cooldowns/grappletrigger",
+        "shatteredsoul:soulsearing/contract"
+    ],
+    "icon": {
+        "item": "minecraft:nether_star"
+    },
+    "impact": 2
+}

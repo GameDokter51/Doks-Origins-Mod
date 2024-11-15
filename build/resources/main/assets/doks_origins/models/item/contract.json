@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "doks_origins:item/contract_unsigned"
-  }
-}

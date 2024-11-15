@@ -1,0 +1,55 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireworks"
+        },
+        "modifier": {
+            "operation": "set_base",
+            "value": 1
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "power grant GameDokter51 shatteredsoul:boons/airwhee"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.elytra.flying",
+                    "volume": 1,
+                    "pitch": 0.9
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 3,
+                                "z": 0.5,
+                                "space": "velocity",
+                                "client": false,
+                                "server": true
+                            },
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 0.7,
+                                "z": 0.1,
+                                "space": "velocity_normalized",
+                                "client": false,
+                                "server": true
+                            }
+                        ]
+                    },
+                    "ticks": 1
+                }
+            ]
+        }
+    }
+}

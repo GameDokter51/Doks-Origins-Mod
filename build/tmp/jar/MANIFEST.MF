@@ -1,2 +1,10 @@
 Manifest-Version: 1.0
+Specification-Title: shatteredsoul
+Specification-Vendor: NoxAeterna, GameDokter51
+Specification-Version: 1
+Implementation-Title: ShatteredSoulOriginForge
+Implementation-Version: 1.0.4
+Implementation-Vendor: NoxAeterna, GameDokter51
+Implementation-Timestamp: 2024-11-14T18:06:21-0600
+MixinConfigs: ${mod_id}.mixins.json
 

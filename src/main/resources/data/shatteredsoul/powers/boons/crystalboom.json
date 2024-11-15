@@ -1,0 +1,44 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:on_block"
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "power grant @e[type=minecraft:armor_stand,tag=shatteredsoul.crystal] shatteredsoul:misc/explode"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "kill @e[tag=shatteredsoul.hitbox]"
+            },
+            {
+                "type": "origins:grant_power",
+                "power": "shatteredsoul:boons/crystalspawn",
+                "source": "shatteredsoul:shatteredsoul"
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:revoke_power",
+                    "power": "shatteredsoul:boons/crystalboom",
+                    "source": "shatteredsoul:shatteredsoul"
+                },
+                "ticks": 1
+            }
+        ]
+    },
+    "cooldown": 30,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

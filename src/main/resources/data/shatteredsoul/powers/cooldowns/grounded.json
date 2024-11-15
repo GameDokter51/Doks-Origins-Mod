@@ -1,0 +1,26 @@
+{
+    "name": "On Ground",
+    "description": "resets dash",
+    "hidden": true,
+    "loading_priority": 999,
+    "type": "origins:action_on_land",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "shatteredsoul:boons/dash_move",
+                "change": 0,
+                "operation": "set"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power revoke GameDokter51 shatteredsoul:boons/airwhee"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "stopsound GameDokter51 * minecraft:item.elytra.flying"
+            }
+        ]
+    }
+}

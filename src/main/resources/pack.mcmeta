@@ -1,6 +1,9 @@
 {
-  "pack": {
-    "pack_format": 15,
-    "description": ""
-  }
+    "pack": {
+        "name": "Shattered Soul",
+        "id": "shatteredsoul",
+        "pack_format": 15,
+        "version": "3.5",
+        "description": ""
+    }
 }

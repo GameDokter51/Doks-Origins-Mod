@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "type": "origins:prevent_entity_render",
+    "entity_condition": {
+        "type": "origins:power",
+        "power": "shatteredsoul:misc/invisible"
+    },
+    "bientity_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:distance",
+                "comparison": ">",
+                "compare_to": 30
+            },
+            {
+                "type": "origins:can_see"
+            }
+        ]
+    }
+}

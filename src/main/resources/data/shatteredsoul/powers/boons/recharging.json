@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "shatteredsoul:banes/soulcharge",
+        "comparison": ">=",
+        "compare_to": 100
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "shatteredsoul:banes/soulcharge",
+        "change": 1,
+        "operation": "add"
+    }
+}
