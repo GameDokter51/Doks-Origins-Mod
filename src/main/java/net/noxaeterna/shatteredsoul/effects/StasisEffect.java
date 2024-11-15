@@ -5,10 +5,12 @@ import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
 public class StasisEffect extends MobEffect {
+
 	public StasisEffect() {
 		super(MobEffectCategory.NEUTRAL, -13953739);
 	}
@@ -21,6 +23,8 @@ public class StasisEffect extends MobEffect {
 		entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
 		entity.fallDistance = 0;
 		entity.setNoGravity(true);
+		if (entity instanceof Mob _entity)
+			_entity.getNavigation().stop();
 	}
 
 	@Override

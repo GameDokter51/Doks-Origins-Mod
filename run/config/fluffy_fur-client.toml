@@ -16,17 +16,17 @@
 
 #Menu
 [menu]
-	#Enable custom panorama button.
+	#Fluffy Fur Panorama.
 	panorama = "minecraft:vanilla"
-	#Enable custom panorama button.
-	panoramaButton = true
-	#Custom panorama button row.
+	#Enable Fluffy Fur menu button.
+	menuButton = true
+	#Fluffy Fur menu button row.
 	#Range: 0 ~ 4
-	panoramaButtonRow = 3
-	#Custom panorama button X offset with row.
-	panoramaButtonRowXOffset = 4
-	#Custom panorama button X offset.
-	panoramaButtonXOffset = 0
-	#Custom panorama button Y offset.
-	panoramaButtonYOffset = 0
+	menuButtonRow = 3
+	#Fluffy Fur menu button X offset with row.
+	menuButtonRowXOffset = 4
+	#Fluffy Fur menu button X offset.
+	menuButtonXOffset = 0
+	#Fluffy Fur menu button Y offset.
+	menuButtonYOffset = 0
 

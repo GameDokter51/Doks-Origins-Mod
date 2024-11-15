@@ -15,6 +15,8 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.noxaeterna.shatteredsoul.init.Sounds;
@@ -24,6 +26,9 @@ import net.noxaeterna.shatteredsoul.init.Tabs;
 import net.noxaeterna.shatteredsoul.init.Items;
 
 import java.util.function.Supplier;
+
+import javax.annotation.Nullable;
+
 import java.util.function.Function;
 import java.util.function.BiConsumer;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -47,6 +52,13 @@ public class ShatteredSoul {
 		Tabs.REGISTRY.register(bus);
 		Items.ITEMS.register(bus);
 	}
+
+    public static boolean isLocked(@Nullable LivingEntity entity) {
+        return entity != null &&
+                 entity.hasEffect(Effects.LOCK.get()); //&&
+                // !entity.isSpectator() &&
+                // !(entity instanceof Player player && player.isCreative());
+    }
 
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
