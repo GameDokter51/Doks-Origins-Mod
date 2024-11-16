@@ -1,25 +1,27 @@
 {
-    "textures": [
-      "shatteredsoul:impact/impact1",
-      "shatteredsoul:impact/impact2",
-      "shatteredsoul:impact/impact3",
-      "shatteredsoul:impact/impact4",
-      "shatteredsoul:impact/impact5",
-      "shatteredsoul:impact/impact6",
-      "shatteredsoul:impact/impact7",
-      "shatteredsoul:impact/impact8",
-      "shatteredsoul:impact/impact9",
-      "shatteredsoul:impact/impact10",
-      "shatteredsoul:impact/impact11",
-      "shatteredsoul:impact/impact12",
-      "shatteredsoul:impact/impact13",
-      "shatteredsoul:impact/impact14",
-      "shatteredsoul:impact/impact15",
-      "shatteredsoul:impact/impact16",
-      "shatteredsoul:impact/impact17",
-      "shatteredsoul:impact/impact18",
-      "shatteredsoul:impact/impact19",
-      "shatteredsoul:impact/impact20",
-      "shatteredsoul:impact/impact21"
-    ]
-  }
+  "textures": [
+    "shatteredsoul:shockwave/shockwave1",
+    "shatteredsoul:shockwave/shockwave2",
+    "shatteredsoul:shockwave/shockwave3",
+    "shatteredsoul:shockwave/shockwave4",
+    "shatteredsoul:shockwave/shockwave5",
+    "shatteredsoul:shockwave/shockwave6",
+    "shatteredsoul:shockwave/shockwave7",
+    "shatteredsoul:shockwave/shockwave8",
+    "shatteredsoul:shockwave/shockwave9",
+    "shatteredsoul:shockwave/shockwave10",
+    "shatteredsoul:shockwave/shockwave11",
+    "shatteredsoul:shockwave/shockwave12",
+    "shatteredsoul:shockwave/shockwave13",
+    "shatteredsoul:shockwave/shockwave14",
+    "shatteredsoul:shockwave/shockwave15",
+    "shatteredsoul:shockwave/shockwave16",
+    "shatteredsoul:shockwave/shockwave17",
+    "shatteredsoul:shockwave/shockwave18",
+    "shatteredsoul:shockwave/shockwave19",
+    "shatteredsoul:shockwave/shockwave20",
+    "shatteredsoul:shockwave/shockwave21",
+    "shatteredsoul:shockwave/shockwave22",
+    "shatteredsoul:shockwave/shockwave23"
+  ]
+}

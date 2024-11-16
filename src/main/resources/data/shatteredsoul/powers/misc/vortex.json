@@ -3,13 +3,13 @@
     "particle0": {
         "type": "origins:particle",
         "particle": "minecraft:soul",
-        "frequency": 2,
+        "frequency": 5,
         "count": 1,
-        "speed": 0.1,
+        "speed": 0.005,
         "spread": {
-            "x": 0.1,
-            "y": 0.1,
-            "z": 0.1
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
         },
         "offset_y": 1,
         "visible_while_invisible": true
@@ -19,11 +19,11 @@
         "particle": "minecraft:sculk_soul",
         "frequency": 2,
         "count": 1,
-        "speed": 0.05,
+        "speed": 0.005,
         "spread": {
-            "x": 0.1,
-            "y": 0.1,
-            "z": 0.1
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
         },
         "offset_y": 1,
         "visible_while_invisible": true
@@ -33,11 +33,25 @@
         "particle": "minecraft:soul_fire_flame",
         "frequency": 1,
         "count": 7,
-        "speed": 0.005,
+        "speed": 0.01,
         "spread": {
             "x": 0.15,
             "y": 0.2,
             "z": 0.15
+        },
+        "offset_y": 1,
+        "visible_while_invisible": true
+    },
+    "particle3": {
+        "type": "origins:particle",
+        "particle": "shatteredsoul:crystal",
+        "frequency": 9,
+        "count": 2,
+        "speed": 0,
+        "spread": {
+            "x": 0,
+            "y": 0,
+            "z": 0
         },
         "offset_y": 1,
         "visible_while_invisible": true

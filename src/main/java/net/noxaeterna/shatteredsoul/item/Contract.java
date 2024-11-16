@@ -22,8 +22,8 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.noxaeterna.shatteredsoul.init.Items;
-import net.noxaeterna.shatteredsoul.init.ParticleTypes;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
 
 public class Contract extends Item {
 	public Contract() {
@@ -70,7 +70,7 @@ public class Contract extends Item {
 		}
 		itemstack.getOrCreateTag().putString("BoundPlayer", (entity.getDisplayName().getString()));
 		if (entity instanceof LivingEntity _entity) {
-			ItemStack _setstack = new ItemStack(Items.SIGNED_CONTRACT.get()).copy();
+			ItemStack _setstack = new ItemStack(ShatteredSoulItems.SIGNED_CONTRACT.get()).copy();
 			_setstack.setCount(1);
 			_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 			if (_entity instanceof Player _player) {
@@ -88,7 +88,7 @@ public class Contract extends Item {
 
 
 		if (level instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ParticleTypes.FOG_SPREAD.get()), player.getX(), player.getY(), player.getZ(), 1, 0, 0, 0, 0);
+			_level.sendParticles((SimpleParticleType) (ShatteredSoulParticles.FOG_SPREAD.get()), player.getX(), player.getY(), player.getZ(), 1, 0, 0, 0, 0);
 
 		return InteractionResultHolder.success(stack);
 	}

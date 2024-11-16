@@ -1,22 +1,11 @@
 1.20.1 Changelog
 1.0
 ====
- - 1.0.4
-   - DEVOUR retains its special abilities, music to be added next
-   - Bloodlust circle now has fixed size, sprite adjusted to compensate
-   - Dash ability now propels the player upwards
-   - Increased full moon DEVOUR chance
- - 1.0.3
-   - Corrected low FPS glitch for bloodlust effect
-   - Added DEVOUR
-   - Changed difficulty chances for full moon
-   - Adjusted dash for waveslamming
-   - Adjusted slam to have 3 tiers: 2, 4, and 8
- - 1.0.2 
-   - Corrected FPS difference sync for bloodlust effect
-   - Enhanced wall-bouncing rules (now with more damage!)
-   - Added bite/shake attack
-   - Fixed slam particle position
-   - Enhanced "Manic" movements
- - 1.0.1 Added FEAST
+ - 1.0.1
+   - Closable value fix
+   - Added new "shockwave" particle
+   - Enhanced crystal particle and added shockwave to it
+   - Changed impact to shockwave texture
+   - Added crystal particle
+   - Changed class names to fit naming conventions
  - 1.0.0 INITIAL

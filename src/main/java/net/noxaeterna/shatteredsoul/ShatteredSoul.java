@@ -16,14 +16,13 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.noxaeterna.shatteredsoul.init.Sounds;
-import net.noxaeterna.shatteredsoul.init.ParticleTypes;
-import net.noxaeterna.shatteredsoul.init.Effects;
-import net.noxaeterna.shatteredsoul.init.Tabs;
-import net.noxaeterna.shatteredsoul.init.Items;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulSounds;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulEffects;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulTabs;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
 
 import java.util.function.Supplier;
 
@@ -46,16 +45,16 @@ public class ShatteredSoul {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		Sounds.REGISTRY.register(bus);
-		Effects.REGISTRY.register(bus);
-		ParticleTypes.REGISTRY.register(bus);
-		Tabs.REGISTRY.register(bus);
-		Items.ITEMS.register(bus);
+		ShatteredSoulSounds.REGISTRY.register(bus);
+		ShatteredSoulEffects.REGISTRY.register(bus);
+		ShatteredSoulParticles.REGISTRY.register(bus);
+		ShatteredSoulTabs.REGISTRY.register(bus);
+		ShatteredSoulItems.ITEMS.register(bus);
 	}
 
     public static boolean isLocked(@Nullable LivingEntity entity) {
         return entity != null &&
-                 entity.hasEffect(Effects.LOCK.get()); //&&
+                 entity.hasEffect(ShatteredSoulEffects.LOCK.get()); //&&
                 // !entity.isSpectator() &&
                 // !(entity instanceof Player player && player.isCreative());
     }
