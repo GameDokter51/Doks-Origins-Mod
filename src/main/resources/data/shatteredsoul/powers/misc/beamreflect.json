@@ -31,6 +31,10 @@
                 },
                 {
                     "type": "origins:execute_command",
+                    "command": "particle shatteredsoul:boomsphere ~ ~1 ~ 0 4 0 1 0"
+                },
+                {
+                    "type": "origins:execute_command",
                     "command": "kill @e[tag=shatteredsoul.hitbox,distance=..1]"
                 }
             ]

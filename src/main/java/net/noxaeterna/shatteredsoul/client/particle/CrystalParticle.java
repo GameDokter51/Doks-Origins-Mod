@@ -123,7 +123,7 @@ public class CrystalParticle extends TextureSheetParticle {
 
     @Override
     public ParticleRenderType getRenderType() {
-        return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+        return ParticleRenderType.NO_RENDER;
     }
 
     @Override

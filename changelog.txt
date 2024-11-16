@@ -1,6 +1,9 @@
 1.20.1 Changelog
 1.0
 ====
+ - 1.0.2
+   - Added 3d sphere shockwave particle to various effects
+   - Removed impact in favor of shockwave
  - 1.0.1
    - Closable value fix
    - Added new "shockwave" particle

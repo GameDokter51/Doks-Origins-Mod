@@ -22,11 +22,11 @@ import net.noxaeterna.shatteredsoul.client.particle.*;
 public class ShatteredSoulParticles {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, ShatteredSoul.MODID);
 
-	public static final RegistryObject<SimpleParticleType> IMPACT = REGISTRY.register("impact", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> RAY = REGISTRY.register("ray", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> SHOCKWAVE = REGISTRY.register("shockwave", () -> new SimpleParticleType(false));
-	public static final RegistryObject<SimpleParticleType> FOG_SPREAD = REGISTRY.register("fog_spread", () -> new SimpleParticleType(false));
-	public static final RegistryObject<SimpleParticleType> CRYSTAL = REGISTRY.register("crystal", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> FOG_SPREAD = REGISTRY.register("fog_spread", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> CRYSTAL = REGISTRY.register("crystal", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> BOOMSPHERE = REGISTRY.register("boomsphere", () -> new SimpleParticleType(true));
 
 	public static RegistryObject<GenericParticleType> CRYSTAL_BASE = REGISTRY.register("crystal_base", GenericParticleType::new);
 	
@@ -39,11 +39,11 @@ public class ShatteredSoulParticles {
 
 		@SubscribeEvent
 		public static void registerParticles(final RegisterParticleProvidersEvent event) {
-			event.registerSpriteSet(IMPACT.get(), ImpactParticle.Provider::new);
 			event.registerSpriteSet(RAY.get(), RayParticle.Provider::new);
 			event.registerSpriteSet(SHOCKWAVE.get(), ShockwaveParticle.Provider::new);
 			event.registerSpriteSet(FOG_SPREAD.get(), FogSpreadParticle.FogSpreadParticleProvider::new);
 			event.registerSpriteSet(CRYSTAL.get(), CrystalParticle.CrystalParticleProvider::new);
+			event.registerSpriteSet(BOOMSPHERE.get(), BoomsphereParticle.BoomsphereParticleProvider::new);
 
 			event.registerSpriteSet(CRYSTAL_BASE.get(), GenericParticleType.Factory::new);
 		}
