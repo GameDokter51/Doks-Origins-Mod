@@ -23,42 +23,20 @@ import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
 public class FogSpreadParticle extends TextureSheetParticle {
+	public static FogSpreadParticleProvider provider(SpriteSet spriteSet) {
+		return new FogSpreadParticleProvider(spriteSet);
+	}
 
-    FogSpreadParticle(ClientLevel world, double x, double y, double z, SpriteSet sprites ,double velX, double velY, double velZ) {
-        super(world, x, y + 0.1, z, 0.0, 0.0, 0.0);
-        this.quadSize = (float) 0;
-        this.setParticleSpeed(0D, 0D, 0D);
-        this.lifetime = (int) 0;
-        this.setSpriteFromAge(sprites);
-    }
+	public static class FogSpreadParticleProvider implements ParticleProvider<SimpleParticleType> {
+		private final SpriteSet spriteSet;
 
-    @Override
-    protected int getLightColor(float pPartialTick) {
-        return super.getLightColor(pPartialTick);
-    }
+		public FogSpreadParticleProvider(SpriteSet spriteSet) {
+			this.spriteSet = spriteSet;
+		}
 
-    @Override
-    public void tick() {
-        super.tick();
-    }
-
-    @Override
-    public ParticleRenderType getRenderType() {
-        return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public static class Provider implements ParticleProvider<SimpleParticleType> {
-        private final SpriteSet sprites;
-
-        public Provider(SpriteSet spriteSet) {
-            this.sprites = spriteSet;
-        }
-
-        public Particle createParticle(SimpleParticleType particleType, ClientLevel level,
-                                       double x, double y, double z,
-                                       double dx, double dy, double dz) {
-                                        
+		public Particle createParticle(SimpleParticleType typeIn, ClientLevel level, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
+			FogSpreadParticle particle = new FogSpreadParticle(level, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			
 		    if (level.isClientSide()) {
 			    for (int i = 0; i < 30; i++) {
 				    double angle = Math.toRadians(i * (360.0 / 30));  // Convert degree to radians, dividing the circle into 20 segments
@@ -96,10 +74,41 @@ public class FogSpreadParticle extends TextureSheetParticle {
 						.setLifetime(100, 100)
 						.setVelocity(xOffset, 0, zOffset)
 						.repeat(level, x, y + 0.1, z, 1);
-			    }
-		    }
-            return new FogSpreadParticle(level, x, y, z, this.sprites, dx, dy, dz);
-        }
+					}
+				}
+			return particle;
+		}
+	}
+
+	@SuppressWarnings("unused")
+	private final SpriteSet spriteSet;
+
+	protected FogSpreadParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
+		super(world, x, y, z);
+		this.spriteSet = spriteSet;
+		this.setSize(0f, 0f);
+		this.quadSize = 0.0f;
+		this.lifetime = 20;
+		this.gravity = 0f;
+		this.hasPhysics = false;
+		this.xd = vx * 1;
+		this.yd = vy * 1;
+		this.zd = vz * 1;
+		this.pickSprite(spriteSet);
+	}
+
+	@Override
+	public int getLightColor(float partialTick) {
+		return 15728880;
+	}
+
+    @Override
+    public ParticleRenderType getRenderType() {
+        return ParticleRenderType.NO_RENDER;
     }
 
+    @Override
+    public void tick() {
+        super.tick();
+    }
 }

@@ -11,9 +11,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MouseHandler.class)
 public abstract class MouseHandlerMixin {
+    private Minecraft Instance = Minecraft.getInstance();
+
     @Inject(method = "onPress", at = @At("HEAD"), cancellable = true)
     private void onPress(long window, int button, int action, int mods, CallbackInfo callbackInfo) {
-        if (ShatteredSoul.isLocked(Minecraft.getInstance().player) && !Minecraft.getInstance().isPaused()) {
+        if (ShatteredSoul.isLocked(Instance.player) && !Instance.isPaused()) {
             KeyMapping.releaseAll();
             callbackInfo.cancel();
         }
@@ -21,7 +23,7 @@ public abstract class MouseHandlerMixin {
 
     @Inject(method = "onScroll", at = @At("HEAD"), cancellable = true)
     private void onScroll(long window, double horizontal, double vertical, CallbackInfo callbackInfo) {
-        if (ShatteredSoul.isLocked(Minecraft.getInstance().player) && !Minecraft.getInstance().isPaused()) {
+        if (ShatteredSoul.isLocked(Instance.player) && !Instance.isPaused()) {
             KeyMapping.releaseAll();
             callbackInfo.cancel();
         }
@@ -29,7 +31,7 @@ public abstract class MouseHandlerMixin {
     
     @Inject(method = "onMove", at = @At("HEAD"), cancellable = true)
     private void onMove(long window, double xpos, double ypos, CallbackInfo callbackInfo) {
-        if (ShatteredSoul.isLocked(Minecraft.getInstance().player) && !Minecraft.getInstance().isPaused()) {
+        if (ShatteredSoul.isLocked(Instance.player) && !Instance.isPaused()) {
             callbackInfo.cancel();
         }
     }

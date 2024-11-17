@@ -8,7 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.network.chat.Component;
 
-import net.noxaeterna.shatteredsoul.init.Items;
+import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
 @Mod.EventBusSubscriber
 public class ContractTooltip {
 	@OnlyIn(Dist.CLIENT)
@@ -16,7 +16,7 @@ public class ContractTooltip {
 	public static void onItemTooltip(ItemTooltipEvent event) {
         if (event.getToolTip() == null)
             return;
-        if (event.getItemStack().getItem() == Items.SIGNED_CONTRACT.get()) {
+        if (event.getItemStack().getItem() == ShatteredSoulItems.SIGNED_CONTRACT.get()) {
             event.getToolTip().add(Component.literal(("\u00A73Signed by " + event.getItemStack().getOrCreateTag().getString("BoundPlayer"))));
             event.getToolTip().add(Component.literal("\u00A70\u00A7kTheir soul is now forfeit"));
         }

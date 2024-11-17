@@ -101,11 +101,6 @@ public class RayParticle extends TextureSheetParticle {
     }
 
     @Override
-    protected int getLightColor(float pPartialTick) {
-        return super.getLightColor(pPartialTick);
-    }
-
-    @Override
     public void tick() {
         super.tick();
         this.setSpriteFromAge(this.sprites);
