@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.client.particle;
+package net.stasis.shatteredsoul.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -20,30 +20,30 @@ import mod.maxbogomol.fluffy_fur.registry.client.FluffyFurRenderTypes;
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
-public class BoomsphereParticle extends TextureSheetParticle {
-	public static BoomsphereParticleProvider provider(SpriteSet spriteSet) {
-		return new BoomsphereParticleProvider(spriteSet);
+public class InvertedBoomsphereParticle extends TextureSheetParticle {
+	public static InvertedBoomsphereParticleProvider provider(SpriteSet spriteSet) {
+		return new InvertedBoomsphereParticleProvider(spriteSet);
 	}
 
-	public static class BoomsphereParticleProvider implements ParticleProvider<SimpleParticleType> {
+	public static class InvertedBoomsphereParticleProvider implements ParticleProvider<SimpleParticleType> {
 		private final SpriteSet spriteSet;
 
-		public BoomsphereParticleProvider(SpriteSet spriteSet) {
+		public InvertedBoomsphereParticleProvider(SpriteSet spriteSet) {
 			this.spriteSet = spriteSet;
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel level, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			BoomsphereParticle particle = new BoomsphereParticle(level, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			InvertedBoomsphereParticle particle = new InvertedBoomsphereParticle(level, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 			
 		    if (level.isClientSide()) {
 				
             	ParticleBuilder.create(FluffyFurParticles.SQUARE)
                     .setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE_TEXTURE)
                     .setBehavior(SphereParticleBehavior.create().build())
-                    .setColorData(ColorParticleData.create(0, 0.5f, 1, 0, 1, 0).build())
-                    .setTransparencyData(GenericParticleData.create(0.25f, 0).setEasing(Easing.QUARTIC_OUT).build())
-                    .setScaleData(GenericParticleData.create(0, (float) ySpeed).setEasing(Easing.QUARTIC_OUT).build())
-                    .setLifetime(40)
+                    .setColorData(ColorParticleData.create(0, 1, 0, 0, 0.5f, 1).build())
+                    .setTransparencyData(GenericParticleData.create(0, (float) zSpeed/4).setEasing(Easing.QUARTIC_OUT).build())
+                    .setScaleData(GenericParticleData.create((float) ySpeed, 0).setEasing(Easing.QUARTIC_OUT).build())
+                    .setLifetime((int) Math.round(xSpeed*20))
                     .repeat(level, x, y, z, 1);
 				}
 			return particle;
@@ -53,7 +53,7 @@ public class BoomsphereParticle extends TextureSheetParticle {
 	@SuppressWarnings("unused")
 	private final SpriteSet spriteSet;
 
-	protected BoomsphereParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
+	protected InvertedBoomsphereParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0f, 0f);

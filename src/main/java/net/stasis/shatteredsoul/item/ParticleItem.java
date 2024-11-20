@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.item;
+package net.stasis.shatteredsoul.item;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -19,7 +19,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
+import net.stasis.shatteredsoul.init.ShatteredSoulParticles;
 
 public class ParticleItem extends Item implements IGuiParticleItem {
 

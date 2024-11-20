@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.init;
+package net.stasis.shatteredsoul.init;
 
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.common.Mod;
@@ -8,8 +8,8 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.core.registries.Registries;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulTabs;
-import net.noxaeterna.shatteredsoul.ShatteredSoul;
+import net.stasis.shatteredsoul.init.ShatteredSoulTabs;
+import net.stasis.shatteredsoul.ShatteredSoul;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ShatteredSoulTabs {

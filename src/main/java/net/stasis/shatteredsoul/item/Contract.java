@@ -1,5 +1,5 @@
 
-package net.noxaeterna.shatteredsoul.item;
+package net.stasis.shatteredsoul.item;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSource;
@@ -22,8 +22,8 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
+import net.stasis.shatteredsoul.init.ShatteredSoulItems;
+import net.stasis.shatteredsoul.init.ShatteredSoulParticles;
 
 public class Contract extends Item {
 	public Contract() {

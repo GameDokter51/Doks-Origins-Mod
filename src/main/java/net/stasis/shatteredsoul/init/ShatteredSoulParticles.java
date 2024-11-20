@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.init;
+package net.stasis.shatteredsoul.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,8 +16,8 @@ import mod.maxbogomol.fluffy_fur.client.particle.behavior.ICustomBehaviorParticl
 import mod.maxbogomol.fluffy_fur.client.particle.type.GenericParticleType;
 import mod.maxbogomol.fluffy_fur.client.render.LevelRenderHandler;
 import net.minecraft.core.particles.ParticleType;
-import net.noxaeterna.shatteredsoul.ShatteredSoul;
-import net.noxaeterna.shatteredsoul.client.particle.*;
+import net.stasis.shatteredsoul.ShatteredSoul;
+import net.stasis.shatteredsoul.client.particle.*;
 
 public class ShatteredSoulParticles {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, ShatteredSoul.MODID);
@@ -27,6 +27,8 @@ public class ShatteredSoulParticles {
 	public static final RegistryObject<SimpleParticleType> FOG_SPREAD = REGISTRY.register("fog_spread", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CRYSTAL = REGISTRY.register("crystal", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BOOMSPHERE = REGISTRY.register("boomsphere", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> INVERTED_BOOMSPHERE = REGISTRY.register("inverted_boomsphere", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> BEAM = REGISTRY.register("beam", () -> new SimpleParticleType(true));
 
 	public static RegistryObject<GenericParticleType> CRYSTAL_BASE = REGISTRY.register("crystal_base", GenericParticleType::new);
 	
@@ -44,6 +46,8 @@ public class ShatteredSoulParticles {
 			event.registerSpriteSet(FOG_SPREAD.get(), FogSpreadParticle.FogSpreadParticleProvider::new);
 			event.registerSpriteSet(CRYSTAL.get(), CrystalParticle.CrystalParticleProvider::new);
 			event.registerSpriteSet(BOOMSPHERE.get(), BoomsphereParticle.BoomsphereParticleProvider::new);
+			event.registerSpriteSet(INVERTED_BOOMSPHERE.get(), InvertedBoomsphereParticle.InvertedBoomsphereParticleProvider::new);
+			event.registerSpriteSet(BEAM.get(), BeamParticle.BeamParticleProvider::new);
 
 			event.registerSpriteSet(CRYSTAL_BASE.get(), GenericParticleType.Factory::new);
 		}

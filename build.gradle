@@ -203,6 +203,7 @@ dependencies {
     implementation fg.deobf("curse.maven:pehkui-319596:5393101")
     implementation fg.deobf("curse.maven:spark-361579:4738952")
     implementation fg.deobf("curse.maven:embeddium-908741:5681725")
+    implementation fg.deobf("curse.maven:apugli-579886:5635683")
     //implementation fg.deobf("curse.maven:oculus-581495:5108615")
 
     // For more info:

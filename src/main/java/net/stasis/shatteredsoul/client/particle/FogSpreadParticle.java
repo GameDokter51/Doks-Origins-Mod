@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.client.particle;
+package net.stasis.shatteredsoul.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;

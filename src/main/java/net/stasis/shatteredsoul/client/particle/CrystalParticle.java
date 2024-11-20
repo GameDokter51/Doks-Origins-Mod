@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.client.particle;
+package net.stasis.shatteredsoul.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,7 +19,7 @@ import mod.maxbogomol.fluffy_fur.common.easing.Easing;
 import mod.maxbogomol.fluffy_fur.registry.client.FluffyFurRenderTypes;
 import net.minecraft.client.multiplayer.ClientLevel;
 
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
+import net.stasis.shatteredsoul.init.ShatteredSoulParticles;
 
 @OnlyIn(Dist.CLIENT)
 public class CrystalParticle extends TextureSheetParticle {

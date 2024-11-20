@@ -1,5 +1,5 @@
 
-package net.noxaeterna.shatteredsoul.item;
+package net.stasis.shatteredsoul.item;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;

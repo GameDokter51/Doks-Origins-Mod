@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul;
+package net.stasis.shatteredsoul;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -18,11 +18,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulSounds;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulParticles;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulEffects;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulTabs;
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
+import net.stasis.shatteredsoul.init.ShatteredSoulSounds;
+import net.stasis.shatteredsoul.init.ShatteredSoulParticles;
+import net.stasis.shatteredsoul.init.ShatteredSoulEffects;
+import net.stasis.shatteredsoul.init.ShatteredSoulTabs;
+import net.stasis.shatteredsoul.init.ShatteredSoulItems;
 
 import java.util.function.Supplier;
 

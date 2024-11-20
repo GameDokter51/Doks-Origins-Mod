@@ -1,9 +1,9 @@
-package net.noxaeterna.shatteredsoul.mixin;
+package net.stasis.shatteredsoul.mixin;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.MouseHandler;
 import net.minecraft.client.KeyMapping;
-import net.noxaeterna.shatteredsoul.ShatteredSoul;
+import net.stasis.shatteredsoul.ShatteredSoul;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

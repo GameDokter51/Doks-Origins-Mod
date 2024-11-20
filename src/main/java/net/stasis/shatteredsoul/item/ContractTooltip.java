@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.item;
+package net.stasis.shatteredsoul.item;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -8,7 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.network.chat.Component;
 
-import net.noxaeterna.shatteredsoul.init.ShatteredSoulItems;
+import net.stasis.shatteredsoul.init.ShatteredSoulItems;
 @Mod.EventBusSubscriber
 public class ContractTooltip {
 	@OnlyIn(Dist.CLIENT)

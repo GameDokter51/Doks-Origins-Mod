@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.init;
+package net.stasis.shatteredsoul.init;
 
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,10 +8,10 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.Item;
 
-import net.noxaeterna.shatteredsoul.item.SignedContract;
-import net.noxaeterna.shatteredsoul.item.ParticleItem;
-import net.noxaeterna.shatteredsoul.item.Contract;
-import net.noxaeterna.shatteredsoul.ShatteredSoul;
+import net.stasis.shatteredsoul.item.SignedContract;
+import net.stasis.shatteredsoul.item.ParticleItem;
+import net.stasis.shatteredsoul.item.Contract;
+import net.stasis.shatteredsoul.ShatteredSoul;
 
 public class ShatteredSoulItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ShatteredSoul.MODID);

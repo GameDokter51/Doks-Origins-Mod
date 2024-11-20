@@ -1,4 +1,4 @@
-package net.noxaeterna.shatteredsoul.client.particle;
+package net.stasis.shatteredsoul.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,7 +28,7 @@ public class ShockwaveParticle extends TextureSheetParticle {
 
     ShockwaveParticle(ClientLevel world, double x, double y, double z, SpriteSet sprites,double velX, double velY, double velZ) {
         super(world, x, y + 0.1, z, 0.0, 0.0, 0.0);
-        this.quadSize = (float) 3;
+        this.quadSize = (float) velY*3;
         this.setParticleSpeed(0D, 0D, 0D);
         this.lifetime = (int) (15 + (Math.floor(velX / 5)));
         this.sprites = sprites;

@@ -1,6 +1,13 @@
 1.20.1 Changelog
 1.0
 ====
+ - 1.0.3
+   - Made boomsphere and shockwave size and lifetime customizable
+   - Inverted boomsphere, added to spawn and reflect
+   - Adjusted transparency of shockwave textures
+   - Refactored workspace under "stasis" package name
+   - Made Crystal hitbox more accurate
+   - Prototype beam particle
  - 1.0.2
    - Added 3d sphere shockwave particle to various effects
    - Removed impact in favor of shockwave
