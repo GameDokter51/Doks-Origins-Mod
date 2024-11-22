@@ -15,7 +15,6 @@ import mod.maxbogomol.fluffy_fur.client.particle.behavior.ParticleBehavior;
 import mod.maxbogomol.fluffy_fur.client.particle.data.ColorParticleData;
 import mod.maxbogomol.fluffy_fur.client.particle.data.GenericParticleData;
 import mod.maxbogomol.fluffy_fur.client.particle.data.SpinParticleData;
-import mod.maxbogomol.fluffy_fur.common.easing.Easing;
 import mod.maxbogomol.fluffy_fur.registry.client.FluffyFurParticles;
 import mod.maxbogomol.fluffy_fur.registry.client.FluffyFurRenderTypes;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -37,33 +36,37 @@ public class BeamParticle extends TextureSheetParticle {
 			BeamParticle particle = new BeamParticle(level, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 			
 		    if (level.isClientSide()) {
-				final float xRot = (float) Math.atan2((x - xSpeed), (z - zSpeed));
-				final float yRot = (float) Math.asin(-(y - ySpeed));
+				final float xDiff= (float) (x - xSpeed);
+				final float yDiff= (float) (y - ySpeed);
+				final float zDiff= (float) (z - zSpeed);
+				final float dist = (float) Math.sqrt(xDiff*xDiff + yDiff*yDiff + zDiff*zDiff);
+				final float yRot = (float) Math.toDegrees(Math.atan2(xDiff, zDiff));
+				final float xRot = (float) Math.toDegrees(Math.atan2(yDiff, dist));
 				
-				ParticleBuilder.create(FluffyFurParticles.STAR)
-					.setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE_TEXTURE)
+				ParticleBuilder.create(FluffyFurParticles.DOT)
+					.setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE)
 					.setBehavior(ParticleBehavior.create()
-							.setXSpinData(SpinParticleData.create(xRot).build())
-							.setYSpinData(SpinParticleData.create(yRot).build())
-							.setZSpinData(SpinParticleData.create(0).build())
-							.build())
-					.setColorData(ColorParticleData.create(0.7f, 1f, 1f, 0f, 0.01f, 0.01f).build())
-					.setTransparencyData(GenericParticleData.create(0.05f, 0).setEasing(Easing.QUARTIC_OUT).build())
-					.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
-					.setLifetime(70, 120)
+						.setXSpinData(SpinParticleData.create().setSpinOffsetDegrees(0).build())
+						.setYSpinData(SpinParticleData.create().setSpinOffsetDegrees(yRot-90).build())
+						.setZSpinData(SpinParticleData.create().setSpinOffsetDegrees(xRot).build())
+						.build())
+					.setColorData(ColorParticleData.create(0, 1f, 1f, 0f, 1f, 1f).build())
+					.setTransparencyData(GenericParticleData.create(0.05f,0).build())
+					.setScaleData(GenericParticleData.create(0.5f).build())
+					.setLifetime(10)
 					.repeat(level, x, y, z, 1);
 
-				ParticleBuilder.create(FluffyFurParticles.STAR)
-					.setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE_TEXTURE)
+				ParticleBuilder.create(FluffyFurParticles.DOT)
+					.setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE)
 					.setBehavior(ParticleBehavior.create()
-							.setXSpinData(SpinParticleData.create(xRot).build())
-							.setYSpinData(SpinParticleData.create(yRot).build())
-							.setZSpinData(SpinParticleData.create(90).build())
-							.build())
-					.setColorData(ColorParticleData.create(0.7f, 1f, 1f, 0f, 0.01f, 0.01f).build())
-					.setTransparencyData(GenericParticleData.create(0.05f, 0).setEasing(Easing.QUARTIC_OUT).build())
-					.setScaleData(GenericParticleData.create(0.1f, 3, 0).setEasing(Easing.ELASTIC_OUT).build())
-					.setLifetime(70, 120)
+						.setXSpinData(SpinParticleData.create().setSpinOffsetDegrees(0).build())
+						.setYSpinData(SpinParticleData.create().setSpinOffsetDegrees(yRot-90).build())
+						.setZSpinData(SpinParticleData.create().setSpinOffsetDegrees(xRot).build())
+						.build())
+					.setColorData(ColorParticleData.create(0, 1f, 1f, 0f, 1f, 1f).build())
+					.setTransparencyData(GenericParticleData.create(0.05f,0).build())
+					.setScaleData(GenericParticleData.create(0.5f).build())
+					.setLifetime(10)
 					.repeat(level, x, y, z, 1);
 			}
 			return particle;
