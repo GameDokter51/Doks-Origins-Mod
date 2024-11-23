@@ -17,6 +17,15 @@
         }
       ]
     },
+    "explode_hit": {
+      "subtitle": "subtitles.explode_hit",
+      "sounds": [
+        {
+          "name": "shatteredsoul:explode_hit",
+          "stream": false
+        }
+      ]
+    },
     "bell_toll": {
       "subtitle": "subtitles.bell_toll",
       "sounds": [

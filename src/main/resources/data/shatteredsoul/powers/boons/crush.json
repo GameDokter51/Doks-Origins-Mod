@@ -17,6 +17,10 @@
                 "resource": "shatteredsoul:banes/soulcharge",
                 "comparison": ">=",
                 "compare_to": 15
+            },
+            {
+                "type": "origins:power_active",
+                "power": "shatteredsoul:cooldowns/modetoggle"
             }
         ]
     },

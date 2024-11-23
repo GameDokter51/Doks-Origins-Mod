@@ -7,6 +7,7 @@
         "shatteredsoul:boons/boing",
         "shatteredsoul:boons/crush",
         "shatteredsoul:boons/judgement",
+        "shatteredsoul:boons/destroy",
         "shatteredsoul:cooldowns/grounded",
         "shatteredsoul:cooldowns/wavedash",
         "shatteredsoul:banes/soulcharge",
@@ -30,6 +31,7 @@
         "shatteredsoul:boons/silent",
         "shatteredsoul:boons/grapple",
         "shatteredsoul:cooldowns/grappletrigger",
+        "shatteredsoul:cooldowns/modetoggle",
         "shatteredsoul:soulsearing/contract"
     ],
     "icon": {

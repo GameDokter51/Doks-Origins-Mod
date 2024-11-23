@@ -10,6 +10,10 @@
                 },
                 {
                     "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "shatteredsoul:cooldowns/modetoggle"
                 }
             ]
         },
@@ -96,6 +100,10 @@
                 },
                 {
                     "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "shatteredsoul:cooldowns/modetoggle"
                 }
             ]
         },

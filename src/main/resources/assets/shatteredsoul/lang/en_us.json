@@ -3,6 +3,7 @@
   "subtitles.bell_toll": "The funeral bell tolls",
   "death.attack.shattered.player": "%1$s\u0027s soul shattered while trying to escape %2$s",
   "subtitles.ricochet": "Beam ricochets",
+  "subtitles.explode_hit": "A devastating hit echos",
   "death.attack.shattered.item": "%1$s\u0027s existence was forfeit %2$s using %3$s",
   "effect.shatteredsoul.stasis": "Stasis",
   "item.shatteredsoul.contract": "Contract",

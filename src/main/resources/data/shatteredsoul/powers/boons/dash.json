@@ -21,6 +21,10 @@
                     "resource": "shatteredsoul:banes/soulcharge",
                     "comparison": ">=",
                     "compare_to": 2
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "shatteredsoul:cooldowns/modetoggle"
                 }
             ]
         },
@@ -77,6 +81,10 @@
                     "resource": "shatteredsoul:banes/soulcharge",
                     "comparison": ">=",
                     "compare_to": 2
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "shatteredsoul:cooldowns/modetoggle"
                 }
             ]
         },
