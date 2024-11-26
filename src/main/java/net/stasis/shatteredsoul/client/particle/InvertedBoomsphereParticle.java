@@ -41,8 +41,8 @@ public class InvertedBoomsphereParticle extends TextureSheetParticle {
                     .setRenderType(FluffyFurRenderTypes.ADDITIVE_PARTICLE_TEXTURE)
                     .setBehavior(SphereParticleBehavior.create().build())
                     .setColorData(ColorParticleData.create(0, 1, 0, 0, 0.5f, 1).build())
-                    .setTransparencyData(GenericParticleData.create(0, (float) zSpeed/4).setEasing(Easing.QUARTIC_OUT).build())
-                    .setScaleData(GenericParticleData.create((float) ySpeed, 0).setEasing(Easing.QUARTIC_OUT).build())
+                    .setTransparencyData(GenericParticleData.create(0, (float) zSpeed/4).setEasing(Easing.QUARTIC_IN).build())
+                    .setScaleData(GenericParticleData.create((float) ySpeed, 0).setEasing(Easing.QUARTIC_IN).build())
                     .setLifetime((int) Math.round(xSpeed*20))
                     .repeat(level, x, y, z, 1);
 				}
