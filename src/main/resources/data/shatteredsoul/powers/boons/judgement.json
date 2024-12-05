@@ -36,7 +36,7 @@
                         {
                             "type": "origins:damage",
                             "amount": 10,
-                            "damage_type": "wither"
+                            "damage_type": "thrown"
                         },
                         {
                             "type": "origins:add_velocity",

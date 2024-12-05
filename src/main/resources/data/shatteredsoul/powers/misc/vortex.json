@@ -11,7 +11,7 @@
             "y": 0.2,
             "z": 0.2
         },
-        "offset_y": 0.5,
+        "offset_y": 1,
         "visible_while_invisible": true
     },
     "particle1": {
@@ -25,7 +25,7 @@
             "y": 0.3,
             "z": 0.3
         },
-        "offset_y": 0.5,
+        "offset_y": 1,
         "visible_while_invisible": true
     },
     "particle2": {
@@ -39,21 +39,21 @@
             "y": 0.2,
             "z": 0.15
         },
-        "offset_y": 0.5,
+        "offset_y": 1,
         "visible_while_invisible": true
     },
     "particle3": {
         "type": "origins:particle",
         "particle": "shatteredsoul:crystal",
         "frequency": 9,
-        "count": 1,
+        "count": 2,
         "speed": 0,
         "spread": {
             "x": 0,
             "y": 0,
             "z": 0
         },
-        "offset_y": 0.5,
+        "offset_y": 1,
         "visible_while_invisible": true
     },
     "pull": {
