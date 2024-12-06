@@ -46,7 +46,7 @@
         "type": "origins:particle",
         "particle": "shatteredsoul:crystal",
         "frequency": 9,
-        "count": 2,
+        "count": 1,
         "speed": 0,
         "spread": {
             "x": 0,

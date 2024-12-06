@@ -27,11 +27,15 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "playsound shatteredsoul:ricochet player @a ~ ~0.5 ~"
+                    "command": "playsound shatteredsoul:ricochet player @a ~ ~ ~"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "particle shatteredsoul:boomsphere ~ ~1 ~ 0 4 0 1 0"
+                    "command": "particle shatteredsoul:boomsphere ~ ~1 ~ 0.5 2 0.5 1 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle shatteredsoul:inverted_boomsphere ~ ~1 ~ 0.5 2 0.5 1 0"
                 },
                 {
                     "type": "origins:execute_command",

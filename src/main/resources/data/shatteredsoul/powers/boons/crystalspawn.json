@@ -31,7 +31,7 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "summon minecraft:interaction ^ ^0.3 ^4 {width:1f,height:1f,Tags:[\"shatteredsoul.hitbox\"]}"
+                "command": "summon minecraft:interaction ^ ^ ^4 {width:1f,height:1f,Tags:[\"shatteredsoul.hitbox\"]}"
             },
             {
                 "type": "origins:delay",
