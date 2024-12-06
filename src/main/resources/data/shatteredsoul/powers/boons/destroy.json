@@ -1,6 +1,7 @@
 {
     "name": "DESTROY",
     "description": "YOU CAN'T ESCAPE!",
+    "hidden": true,
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -14,6 +15,7 @@
                 "compare_to": 10
             },
             {
+                "inverted": true,
                 "type": "origins:power_active",
                 "power": "shatteredsoul:cooldowns/modetoggle"
             }
@@ -28,132 +30,81 @@
         "shape_type": "visual",
         "fluid_handling": "any",
         "bientity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:target_condition",
-                "condition": {
-                    "type": "origins:on_block"
-                }
-            },
-            "if_action": {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:actor_action",
-                        "action": {
-                            "type": "origins:execute_command",
-                            "command": "tp @s @e[type=minecraft:armor_stand,limit=1,tag=shatteredsoul.judgement]"
-                        }
-                    },
-                    {
-                        "type": "origins:damage",
-                        "amount": 6,
-                        "damage_type": "thrown"
-                    },
-                    {
-                        "type": "origins:add_velocity",
-                        "y": 1,
-                        "client": false,
-                        "server": true
-                    },
-                    {
-                        "type": "origins:target_action",
-                        "action": {
-                            "type": "origins:play_sound",
-                            "sound": "shatteredsoul:explode_hit",
-                            "volume": 1,
-                            "pitch": 1
-                        }
-                    },
-                    {
-                        "type": "origins:actor_action",
-                        "action": {
-                            "type": "origins:execute_command",
-                            "command": "execute at @s anchored eyes run particle shatteredsoul:boomsphere ^ ^-0.8 ^1.5 1.1 8 0.5 1 0"
-                        }
-                    }
-                ]
-            },
-            "else_action": {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:target_action",
-                        "action": {
-                            "type": "origins:execute_command",
-                            "command": "execute as @e[limit=1,sort=nearest,type=!minecraft:player] at @s anchored eyes run tp @p[tag=shatteredsoul] ^ ^0.2 ^-2 facing entity @s"
-                        }
-                    },
-                    {
-                        "type": "origins:target_action",
-                        "action": {
-                            "type": "origins:apply_effect",
-                            "effect": {
-                                "effect": "shatteredsoul:lock",
-                                "duration": 5,
-                                "amplifier": 0,
-                                "show_particles": false,
-                                "show_icon": true
-                            }
-                        }
-                    },
-                    {
-                        "type": "origins:actor_action",
-                        "action": {
-                            "type": "origins:apply_effect",
-                            "effect": {
-                                "effect": "shatteredsoul:stasis",
-                                "duration": 10,
-                                "amplifier": 0,
-                                "show_particles": false,
-                                "show_icon": true
-                            }
-                        }
-                    },
-                    {
-                        "type": "origins:target_action",
-                        "action": {
-                            "type": "origins:play_sound",
-                            "sound": "shatteredsoul:explode_hit",
-                            "volume": 1,
-                            "pitch": 1
-                        }
-                    },
-                    {
-                        "type": "origins:delay",
-                        "action": {
-                            "type": "origins:and",
-                            "actions": [
-                                {
-                                    "type": "origins:damage",
-                                    "amount": 7,
-                                    "damage_type": "thrown"
-                                },
-                                {
-                                    "type": "origins:add_velocity",
-                                    "y": -4,
-                                    "client": false,
-                                    "server": true
-                                },
-                                {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                        "type": "origins:execute_command",
-                                        "command": "particle shatteredsoul:shockwave ~ ~1 ~ 0.7 1.5 0 1 0"
-                                    }
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute as @e[limit=1,sort=nearest,type=!minecraft:player] at @s anchored eyes run tp @p[tag=shatteredsoul] ^ ^0.2 ^-2 facing entity @s"
+                            },
+                            {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "shatteredsoul:lock",
+                                    "duration": 5,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
                                 }
-                            ]
-                        },
-                        "ticks": 6
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "shatteredsoul:explode_hit",
+                                "volume": 1,
+                                "pitch": 1
+                            }
+                        ]
                     }
-                ]
-            }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "shatteredsoul:stasis",
+                            "duration": 10,
+                            "amplifier": 0,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 7,
+                                "damage_type": "thrown"
+                            },
+                            {
+                                "type": "origins:add_velocity",
+                                "y": -4,
+                                "client": false,
+                                "server": true
+                            },
+                            {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "particle shatteredsoul:shockwave ~ ~1 ~ 0.7 1.5 0 1 0"
+                                }
+                            }
+                        ]
+                    },
+                    "ticks": 6
+                }
+            ]
         },
         "block_action": {
-            "type": "origins:explode",
-            "power": 2,
-            "destruction_type": "none",
-            "damage_self": false
+            "type": "origins:execute_command",
+            "command": "tp @e[type=player,tag=shatteredsoul] @e[type=minecraft:armor_stand,limit=1,tag=shatteredsoul.judgement]"
         },
         "before_action": {
             "type": "origins:and",
@@ -223,7 +174,7 @@
                         "type": "origins:execute_command",
                         "command": "kill @e[type=minecraft:armor_stand,tag=shatteredsoul.judgement]"
                     },
-                    "ticks": 5
+                    "ticks": 6
                 },
                 {
                     "type": "origins:explode",
